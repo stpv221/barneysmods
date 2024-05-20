@@ -186,6 +186,13 @@ playButton.addEventListener('click', function() {
             listItem.addEventListener('click', function() {
                 songNameInput.value = this.textContent;
             });
+            var removeSong = document.createElement('a');
+            removeSong.textContent = "✕";
+            removeSong.addEventListener("click", () =>{
+                removeSong.remove();
+            });
+
+            listItem.appendChild(exitButton);
             songList.appendChild(listItem);
         }
         modal.appendChild(songList);
