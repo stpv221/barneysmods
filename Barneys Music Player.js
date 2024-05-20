@@ -192,7 +192,7 @@ playButton.addEventListener('click', function() {
                 removeSong.remove();
             });
 
-            listItem.appendChild(exitButton);
+            listItem.appendChild(removeSong);
             songList.appendChild(listItem);
         }
         modal.appendChild(songList);
